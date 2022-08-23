@@ -143,13 +143,26 @@ body {
 
 }
 
-.button-second:hover {}
+.button-second:hover:before {
+  background-color: transparent;
+
+}
+
+.button-second:active:before {
+  background-color: transparent;
+
+}
+
+.button-second:hover {
+  background-color: #FFE17F;
+
+
+}
 
 .button-second:active {
-  background-color: #000000;
-  color: #FFE17F;
-  padding: 5px 155px 5px 5px;
-  box-sizing: border-box;
+  background-color: #FFCC33;
+  color: #000000;
+
 }
 
 .button-second:focus {
@@ -158,8 +171,9 @@ body {
 
 }
 
-.button-second:active:before {
-  background-color: transparent;
+
+.button-second:disabled {
+  opacity: 0.6;
 
 
 }
@@ -661,7 +675,7 @@ body {
 
   width: 160px;
   height: 40px;
-
+  display: inline-block;
 
   outline: 2px solid #000000;
   border-radius: 0px 50px 50px 0px;
@@ -724,6 +738,14 @@ body {
   box-sizing: border-box;
   color: #000000;
   text-decoration: none;
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+
+  align-items: center;
+
 }
 
 
@@ -2508,17 +2530,17 @@ background-image: url("../images1/search-8.svg");
   font-size: 18px;
   line-height: 30px;
   color: #444444;
-
-  border-color: transparent;
   opacity: 0.5;
   display: flex;
   flex-direction: row;
-  border-bottom: solid 2px #C4C4C4;
-
-  padding: 0px;
-
+  border: none;
+  padding: 17px;
+  box-sizing: border-box;
   width: 810px;
   height: 57px;
+  align-items: center;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid #C4C4C4;
 }
 
 .subscribe-button {
@@ -2540,44 +2562,39 @@ background-image: url("../images1/search-8.svg");
   width: 253px;
   height: 57px;
 
-  outline: 3px solid #C4C4C4;
-  border: none;
+  border: 3px solid #C4C4C4;
+
   box-sizing: border-box;
-  display: flex;
+  display: inline-block;
 
 
 }
 
 .subscribe-button:hover {
-  background: #000000;
+
+  background-color: #000000;
   outline: 3px solid #000000;
   color: #FFFFFF;
-
 
 }
 
 
 .subscribe-button:active {
-  background: #000000;
+  background-color: #000000;
   outline: 3px solid #000000;
   color: #FFFFFF;
   opacity: 0.3;
-
 }
 
 .subscribe-button:focus {
   background: #FFFFFF;
-  outline: 3px solid #C4C4C4;
-  color: #000000;
-
+  border: 1px dashed #7B61FF;
+  border-radius: 5px;
 
 }
 
 .subscribe-button:disabled {
-  background: #FFFFFF;
-  outline: 3px solid #C4C4C4;
-  color: #000000;
-  opacity: 0.3;
+  opacity: 0.6;
 }
 
 .contacts-schedule-item {
