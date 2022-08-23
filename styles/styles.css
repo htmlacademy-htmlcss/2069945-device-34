@@ -555,7 +555,7 @@ body {
   padding: 5px 48px;
   box-sizing: border-box;
 
- outline: 2px solid #000000;
+  outline: 2px solid #000000;
   border-radius: 50px 0px 0px 50px;
   margin: 0;
   flex-grow: 1;
@@ -1818,7 +1818,7 @@ body {
 
 }
 
-.dilivery-element:focus {
+.dilivery-element:focus-within {
   border: 2px solid #AF4FFF;
 
 }
@@ -1879,7 +1879,7 @@ body {
   color: #000000;
   box-sizing: border-box;
   justify-content: space-between;
-
+  outline: none;
 
 
   /*
@@ -1896,7 +1896,7 @@ background-image: url("../images1/search-8.svg");
 
 
 .field-dilivery:active {
-  opacity: 0.3;
+
 
 
 
