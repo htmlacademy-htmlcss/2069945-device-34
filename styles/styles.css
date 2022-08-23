@@ -496,6 +496,9 @@ body {
   flex-grow: 0;
   padding: 0;
   margin-right: 26px;
+
+
+
 }
 
 .auth-l {
@@ -543,21 +546,26 @@ body {
   font-size: 16px;
   line-height: 20px;
   background-color: transparent;
-  align-self: center;
-
   width: 360px;
   height: 40px;
 
   flex: none;
-  order: 0;
+
   align-items: center;
   padding: 5px 48px;
   box-sizing: border-box;
-  outline: 2px solid #000000;
+
+ outline: 2px solid #000000;
   border-radius: 50px 0px 0px 50px;
   margin: 0;
   flex-grow: 1;
 }
+
+
+.field-search:focus-within {
+  border: 2px solid #AF4FFF;
+}
+
 
 
 /* Range */
@@ -666,7 +674,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-
+  cursor: pointer;
   box-sizing: border-box;
   justify-content: center;
   align-items: center;
@@ -679,6 +687,37 @@ body {
 
   outline: 2px solid #000000;
   border-radius: 0px 50px 50px 0px;
+
+}
+
+
+.search-button:hover {
+  background-color: #000000;
+  border: 2px solid #000000;
+  color: #FFFFFF;
+
+
+}
+
+.search-button:active {
+  background-color: #000000;
+  border: 2px solid #000000;
+  color: #FFFFFF;
+  opacity: 0.3;
+
+}
+
+.wrapper:focus-within {
+
+  display: inline-block;
+  width: 160px;
+  height: 40px;
+  border: 2px solid #AF4FFF;
+
+}
+
+.search-button:focus {
+  border: 2px solid #AF4FFF;
 
 }
 
@@ -793,12 +832,12 @@ body {
 }
 
 .navigation-login-link:hover {
-  opacity: 0.8;
+  opacity: 0.3;
 
 }
 
 .navigation-login-link:active {
-  opacity: 0.3;
+  opacity: 0.6;
 
 }
 
@@ -1053,30 +1092,28 @@ body {
   outline: 2px solid transparent;
   text-decoration: none;
   position: relative;
+
+
+
+
 }
 
-.navigation-user-link-compare::before {
+.compare::before {
   content: url("../images1/compare.svg");
   margin-right: 12px;
 }
 
-.navigation-user-link-basket::before {
+
+
+
+
+
+.basket::before {
   content: url("../images1/basket.svg");
   margin-right: 12px;
 
 }
 
-.navigation-name {
-  font-family: 'Rubik', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
-  color: #000000;
-  text-decoration: none;
-
-
-}
 
 
 .counte-badge {
@@ -2523,6 +2560,11 @@ background-image: url("../images1/search-8.svg");
   width: 810px;
 }
 
+.input {
+  outline: none;
+
+}
+
 .field-subscribe {
   font-family: 'Rubik', sans-serif;
   font-style: normal;
@@ -2541,6 +2583,11 @@ background-image: url("../images1/search-8.svg");
   align-items: center;
   border-top: 3px solid transparent;
   border-bottom: 3px solid #C4C4C4;
+  outline: none;
+}
+
+.field-subscribe: :focus-within {
+  border: 2px solid #AF4FFF;
 }
 
 .subscribe-button {
@@ -2587,7 +2634,7 @@ background-image: url("../images1/search-8.svg");
 }
 
 .subscribe-button:focus {
-  background: #FFFFFF;
+
   border: 1px dashed #7B61FF;
   border-radius: 5px;
 
