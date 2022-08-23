@@ -144,19 +144,26 @@ body {
 }
 
 .button-second:hover {
-  background-color: #FFE17F;
+
 
 
 }
 
 .button-second:active {
-  background-color: #FFCC33;
-
-
+  background-color: #000000;
+  color: #FFE17F;
+  padding: 5px 155px 5px 5px;
+  box-sizing: border-box;
 }
 
 .button-second:focus {
   outline: 2px solid #AF4FFF;
+
+
+}
+
+.button-second:active:before {
+background-color: transparent;
 
 
 }
@@ -877,6 +884,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+}
+
+.logo-navigation {
+
+
 }
 
 
@@ -2786,7 +2798,7 @@ background-image: url("../images1/search-8.svg");
 }
 
 
-.footer-social-link:active::before{
+.footer-social-link:active::before {
   background-color: #FFC700;
 
   opacity: 0.3;
