@@ -53,9 +53,7 @@ body {
 .container {
   max-width: 1160px;
   margin: 0 auto;
-
-
-
+  width: 100%;
 }
 
 .header .container {
@@ -63,7 +61,7 @@ body {
   max-width: 1160px;
   margin: 0 auto;
   box-sizing: border-box;
-
+  background-color: #FFE17F;
 }
 
 /*
@@ -82,7 +80,7 @@ body {
 
 .header {
   display: flex;
-  background-color: #FFE17F;
+
   margin-top: 40px;
   min-height: 300px;
 }
@@ -221,14 +219,24 @@ body {
 
 
 
-.advantages {
-  display: flex;
-  box-sizing: border-box;
-  justify-content: space-between;
+.slider {
+
+
   height: 560px;
   margin-top: -150px;
 
 }
+
+
+.slider .container {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+
+  margin-top: 0;
+
+}
+
 
 .text-number {
 
@@ -263,12 +271,13 @@ body {
   font-size: 50px;
   line-height: 50px;
   color: #000000;
-  margin-bottom: 15px;
+  margin-top: 0 0 30px;
+
   padding: 0;
 }
 
 .slider-description {
-  margin-bottom: 35px;
+  margin: 0 0 35px;
   padding: 0;
   font-family: 'Rubik', sans-serif;
   font-style: normal;
@@ -424,7 +433,7 @@ body {
 .button-catalog-n {
   background-color: transparent;
   border: none;
-
+  cursor: pointer;
 
 }
 
@@ -938,7 +947,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 .search-auth {
@@ -989,8 +998,6 @@ body {
 
 .logo-footer {
   display: inline-block;
-  width: 145px;
-  height: 46px;
   outline: 2px solid transparent;
   padding: 2px;
   box-sizing: border-box;
@@ -1103,7 +1110,7 @@ body {
 }
 
 .compare::before {
-  content: url("..//compare.svg");
+  content: url("../images/compare.svg");
   margin-right: 12px;
 }
 
@@ -1377,18 +1384,6 @@ body {
 
 
 
-
-
-.container {
-  width: 1440px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-
-
-}
-
 .main {
 
   margin: 0 auto;
@@ -1399,14 +1394,7 @@ body {
 
 }
 
-.page-container {
-  width: 1440px;
-  margin: 0 auto;
-  background-color: #F0F0F0;
-  flex-wrap: wrap;
-  padding: 25px 140px 0 140px;
-  box-sizing: border-box;
-}
+
 
 .main-index {
   color: #000000;
@@ -1415,11 +1403,14 @@ body {
 
 }
 
-.main-index-catalog {}
-
 .catalog-all {
 
   padding: 70px 0px;
+}
+
+.catalog-all .container {
+display: flex;
+
 }
 
 
@@ -1548,6 +1539,11 @@ body {
 
 .catalog-all-link {
   text-decoration: none;
+}
+
+.catalog-all-item:not(:last-child) {
+margin-right: 40px;
+
 }
 
 .catalog-right-column {
@@ -1809,6 +1805,11 @@ body {
 
 }
 
+dilivery-tool .container {
+
+  display: flex;
+}
+
 .dilivery-element {
   display: flex;
   align-items: center;
@@ -1950,31 +1951,51 @@ background-image: url("../images/search-8.svg");
 
 
 
-.index-columns {
-  display: flex;
-  padding: 0 0 72px 0;
 
+.index-columns {
   min-height: 391px;
-  box-sizing: border-box;
-  align-items: center;
+
   background: linear-gradient(to bottom, #FFFFFF 20%, #F0F0F0 20% 100%);
 
 }
 
 
 
-
-
-.index-columns-1 {
+.index-columns .container {
   display: flex;
-  justify-content: space-between;
+
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  align-items: center;
+
+}
+
+
+
+
+
+.contacts {
+
+
   padding: 0 0 65px;
-  width: 1160px;
+
 
   background-color: #FFFFFF;
 
 
 }
+
+.contacts .container {
+  display: flex;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+}
+
+
+
+
 
 .dilivery-title {
   font-family: 'Raleway', sans-serif;
@@ -2501,16 +2522,34 @@ background-image: url("../images/search-8.svg");
 }
 
 .subscribe {
-  display: block;
-  box-sizing: border-box;
-  flex-direction: column;
-
   background-color: #F0F0F0;
-  padding: 64px 0 56px 0;
-  text-align: center;
 
 
 }
+
+
+.subscribe .container {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+
+
+  padding: 64px 0 56px 0;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .form-subscribe-line {
   display: flex;
@@ -2762,20 +2801,14 @@ background-image: url("../images/search-8.svg");
   box-sizing: border-box;
 }
 
-.main .container {
 
-  padding: 0px 0 0px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-
-}
 
 
 
 
 
 .footer {
+
   background-color: #444444;
 
 
@@ -2786,9 +2819,7 @@ background-image: url("../images/search-8.svg");
   min-height: 321px;
   padding: 62px 0 61px;
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+
 }
 
 
@@ -2960,12 +2991,8 @@ background-image: url("../images/search-8.svg");
 }
 
 .footer-social-link:focus {
-  display: inline-block;
-
-
   outline: 2px solid #AF4FFF;
-  width: 44px;
-  height: 44px;
+
 }
 
 
